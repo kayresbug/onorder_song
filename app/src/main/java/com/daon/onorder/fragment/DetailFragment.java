@@ -274,7 +274,7 @@ public class DetailFragment extends Fragment {
         detailCount = RootView.findViewById(R.id.detail_count);
 
         if (name.equals("송이불고기") || name.equals("송이전골") || name.equals("불고기") || name.equals("송이돌솥정식") || name.equals("약수돌솥정식")
-                || name.equals("송이황태해장국") || name.equals("송이칼국수")){
+                || name.equals("송이황태해장국") || name.equals("생송이구이")){
             detailCount.setText("2");
         }
         priceText = RootView.findViewById(R.id.detailfragment_text_price);
@@ -301,7 +301,7 @@ public class DetailFragment extends Fragment {
             public void onClick(View v) {
                 int count = Integer.parseInt(detailCount.getText().toString());
                 if (name.equals("송이불고기") || name.equals("송이전골") || name.equals("불고기") || name.equals("송이돌솥정식") || name.equals("약수돌솥정식")
-                        || name.equals("송이황태해장국") || name.equals("송이칼국수")){
+                        || name.equals("송이황태해장국") || name.equals("생송이구이")){
                     if (count > 2) {
                         count--;
                         detailCount.setText(String.valueOf(count));

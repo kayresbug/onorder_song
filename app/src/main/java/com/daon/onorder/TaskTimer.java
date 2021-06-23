@@ -60,9 +60,9 @@ public class TaskTimer extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String result) {
         if(RESULT_SUCCESS.equals(result)){
-            ((MenuActivity)context).event();
-            Intent intent = new Intent(context, ADPopupActivity.class);
-            context.startActivity(intent);
+//            ((MenuActivity)context).event();
+//            Intent intent = new Intent(context, ADPopupActivity.class);
+//            context.startActivity(intent);
 
 
         }

@@ -994,7 +994,7 @@ public class MenuActivity extends AppCompatActivity{
         HashMap<String, byte[]> m_hash = new HashMap<String, byte[]>();
         /*고정 사용필드*/
         m_hash.put("TelegramType", "0200".getBytes());                                    // 전문 구분 ,  승인(0200) 취소(0420)
-        m_hash.put("DPTID", "AT0293857A".getBytes());                                     // 단말기번호 , 테스트단말번호 DPT0TEST03
+        m_hash.put("DPTID", "AT0302078A".getBytes());                                     // 단말기번호 , 테스트단말번호 DPT0TEST03
 //        m_hash.put("DPTID", "DPT0TEST03".getBytes());                                     // 단말기번호 , 테스트단말번호 DPT0TEST03
         m_hash.put("PosEntry", "S".getBytes());                                           // Pos Entry Mode , 현금영수증 거래 시 키인거래에만 'K'사용
         m_hash.put("PayType", "00".getBytes());                                           // [신용]할부개월수(default '00') [현금]거래자구분
