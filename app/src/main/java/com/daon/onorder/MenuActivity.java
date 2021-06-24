@@ -141,7 +141,7 @@ public class MenuActivity extends AppCompatActivity{
         context = this;
         pref = getSharedPreferences("pref", MODE_PRIVATE);
         taskTimer.setTime(basic, context);
-        taskTimer.execute("");
+//        taskTimer.execute("");
         table = findViewById(R.id.menuactivity_text_table);
         table.setText(pref.getString("table", ""));
         fragmentManager = getSupportFragmentManager();
@@ -435,7 +435,7 @@ public class MenuActivity extends AppCompatActivity{
                 //put your ArrayList data in bundle
                 bundle.putSerializable("list", (ArrayList<MenuModel>) menu_list.get(0));
                 menuFragment.setArguments(bundle);
-                bundle.putInt("position", array_count1[4]);
+                bundle.putInt("position", 24);
                 getSupportFragmentManager().beginTransaction().replace(R.id.menuactivity_layout_menu, menuFragment).commit();
             }
         });
