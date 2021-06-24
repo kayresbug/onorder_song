@@ -535,7 +535,7 @@ public class MenuActivity extends AppCompatActivity{
         if (taskTimer.getStatus() != AsyncTask.Status.RUNNING) {
             taskTimer = new TaskTimer();
             taskTimer.setTime(60, context);
-            taskTimer.execute("");
+//            taskTimer.execute("");
         }
 
     }
