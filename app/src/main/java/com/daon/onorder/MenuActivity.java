@@ -102,7 +102,7 @@ public class MenuActivity extends AppCompatActivity{
     String removePrice = "";
     FragmentManager fragmentManager;
     SharedPreferences pref;
-    TaskTimer taskTimer = new TaskTimer(); // extends AsyncTask
+//    TaskTimer taskTimer = new TaskTimer(); // extends AsyncTask
     int basic = 60;
     int[] array_count1;
 
@@ -140,7 +140,7 @@ public class MenuActivity extends AppCompatActivity{
 
         context = this;
         pref = getSharedPreferences("pref", MODE_PRIVATE);
-        taskTimer.setTime(basic, context);
+//        taskTimer.setTime(basic, context);
 //        taskTimer.execute("");
         table = findViewById(R.id.menuactivity_text_table);
         table.setText(pref.getString("table", ""));
@@ -236,7 +236,7 @@ public class MenuActivity extends AppCompatActivity{
         payment_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
                 Log.d("daon_test", "isorder = "+isOrder);
                 if (!isOrder) {
                     if (order_list.size() > 0) {
@@ -300,7 +300,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
 
                 menu1Fragment menuFragment = new menu1Fragment();
                 Bundle bundle = new Bundle();
@@ -325,7 +325,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
 
                 menu1Fragment menuFragment = new menu1Fragment();
                 Bundle bundle = new Bundle();
@@ -350,7 +350,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
 
                 menu1Fragment menuFragment = new menu1Fragment();
                 Bundle bundle = new Bundle();
@@ -373,7 +373,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
                 menu1.setTextColor(Color.parseColor("#ffffff"));
                 menu2.setTextColor(Color.parseColor("#ffffff"));
                 menu3.setTextColor(Color.parseColor("#ffffff"));
@@ -396,7 +396,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
 
                 menu1Fragment menuFragment = new menu1Fragment();
                 Bundle bundle = new Bundle();
@@ -419,7 +419,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn6).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
 
                 menu1Fragment menuFragment = new menu1Fragment();
                 Bundle bundle = new Bundle();
@@ -442,7 +442,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn7).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
 
                 menu1Fragment menuFragment = new menu1Fragment();
                 Bundle bundle = new Bundle();
@@ -465,7 +465,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn8).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
 
                 menu1Fragment menuFragment = new menu1Fragment();
                 Bundle bundle = new Bundle();
@@ -488,7 +488,7 @@ public class MenuActivity extends AppCompatActivity{
         findViewById(R.id.menuactivity_layout_btn9).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
 
                 menu1Fragment menuFragment = new menu1Fragment();
                 Bundle bundle = new Bundle();
@@ -511,7 +511,7 @@ public class MenuActivity extends AppCompatActivity{
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
                 Intent intent = new Intent(MenuActivity.this, CallActivity.class);
                 startActivity(intent);
             }
@@ -519,7 +519,7 @@ public class MenuActivity extends AppCompatActivity{
         call_driver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskTimer.setTime(basic);
+//                taskTimer.setTime(basic);
                 Intent intent = new Intent(MenuActivity.this, CallDriverActivity.class);
                 startActivity(intent);
             }
@@ -530,13 +530,13 @@ public class MenuActivity extends AppCompatActivity{
     public void onResume(){
         super.onResume();
         // put your code here...
-        Log.d("daon_test", "on resume!!!"+taskTimer.getStatus());
+//        Log.d("daon_test", "on resume!!!"+taskTimer.getStatus());
 //        taskTimer.cancel(true);
-        if (taskTimer.getStatus() != AsyncTask.Status.RUNNING) {
-            taskTimer = new TaskTimer();
-            taskTimer.setTime(60, context);
+//        if (taskTimer.getStatus() != AsyncTask.Status.RUNNING) {
+//            taskTimer = new TaskTimer();
+//            taskTimer.setTime(60, context);
 //            taskTimer.execute("");
-        }
+//        }
 
     }
 
@@ -1298,7 +1298,7 @@ public class MenuActivity extends AppCompatActivity{
 
     }
     public void timerReset(){
-        taskTimer.setTime(basic);
+//        taskTimer.setTime(basic);
     }
 
     public void loading() {
